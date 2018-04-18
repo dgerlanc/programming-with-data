@@ -3,7 +3,7 @@
 Workshop Duration: 3.5 hours
 
 ## Prerequisites:
-Workshop assumes that participants have intermediate-level programming ability in Python. Participants should know the difference between a dict, list, and tuple. Familiarity with control-flow (if/else/for/while) and error handling (try/catch) are required.
+Workshop assumes that participants have intermediate-level programming ability in Python. Participants should know the difference between a `dict`, `list`, and `tuple`. Familiarity with control-flow (`if/else/for/while`) and error handling (`try/catch`) are required.
 
 No statistics background is required.
 
@@ -21,7 +21,7 @@ $ git clone https://github.com/dgerlanc/prog-w-data.git
 
 Downloading them prior to the workshop is required as Internet access may not be available during the workshop.
 
-To complete the workshop exercises, you must use conda to install the dependencies specified in the pandas-exercises repository:
+To complete the workshop exercises, you must use `conda` to install the dependencies specified in the `environment.yml` file in the repository:
 
 ```
 $ conda env create -f environment.yml
