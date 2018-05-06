@@ -1,7 +1,5 @@
 # Programming with Data: Python and Pandas
 
-## Description
-
 Whether in R, MATLAB, Stata, or python, modern data analysis, for many
 researchers, requires some kind of programming. The preponderance of tools and
 specialized languages for data analysis suggests that general purpose
