@@ -7,6 +7,7 @@ dependencies:
   - asn1crypto=0.24.0=py36_0
   - babel=2.5.3=py36_0
   - backcall=0.1.0=py36_0
+  - blas=1.0=mkl
   - bleach=2.1.3=py36_0
   - ca-certificates=2018.03.07=0
   - certifi=2018.1.18=py36_0
@@ -43,6 +44,7 @@ dependencies:
   - libffi=3.2.1=h475c297_4
   - libgfortran=3.0.1=h93005f0_2
   - libiconv=1.15=hdd342a3_7
+  - libopenblas=0.3.2=hdc02c5d_1
   - libpng=1.6.34=he12f830_0
   - libsodium=1.0.16=h3efe00b_0
   - markupsafe=1.0=py36h3a1e703_1
@@ -54,11 +56,12 @@ dependencies:
   - nbformat=4.4.0=py36h827af21_0
   - ncurses=6.0=hd04f020_2
   - notebook=5.4.1=py36_0
-  - numpy=1.14.2=py36ha9ae307_1
+  - numpy=1.14.3=py36h9bb19eb_1
+  - numpy-base=1.14.3=py36h479e554_1
   - numpydoc=0.8.0=py36_0
   - openssl=1.0.2o=h26aff7b_0
   - packaging=17.1=py36_0
-  - pandas=0.22.0=py36h0a44026_0
+  - pandas=0.23.4=py36h6440ff4_0
   - pandoc=1.19.2.1=ha5e8f32_1
   - pandocfilters=1.4.2=py36h3b0b094_1
   - parso=0.2.0=py36_0

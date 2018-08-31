@@ -32,7 +32,7 @@ https://www.anaconda.com/download/
 The slides and exercises that accompany the workshop are available on Github:
 
 ```
-$ git clone https://github.com/dgerlanc/prog-w-data.git
+$ git clone https://github.com/dgerlanc/programming-with-data.git
 ```
 
 Downloading them prior to the workshop is required as Internet access may not be
@@ -44,4 +44,10 @@ dependencies specified in the `environment.yml` file in the repository:
 ```
 $ conda env create -f environment.yml
 ```
+
+This will create an `conda` environment called `pydata` which may be
+"activated" with the following commands:
+
+* Windows: `activate pydata`
+* Linux and Mac: `source activate pydata`
 
