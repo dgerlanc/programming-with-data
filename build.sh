@@ -1,3 +1,3 @@
 #!/bin/bash
 
-jupyter nbconvert --to slides *slides.ipynb
+jupyter nbconvert --to slides --output-dir build *slides.ipynb
