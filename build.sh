@@ -3,7 +3,7 @@
 set -e
 
 # 1) Run all notebooks and check for errors
-# jupyter nbconvert --to notebook --execute *-slides.ipynb --inplace
+# jupyter nbconvert --inplace --to notebook --execute *-slides.ipynb
 
 jupyter nbconvert --to slides --output-dir build *slides.ipynb
 
