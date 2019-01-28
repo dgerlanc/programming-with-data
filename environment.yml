@@ -6,3 +6,4 @@ dependencies:
   - numpy=1.15.*
   - pandas=0.23.*
   - jupyter=1.0.*
+  - statsmodels=0.9.*

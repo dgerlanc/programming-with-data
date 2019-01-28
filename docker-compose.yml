@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  slides:
+    image: astefanutti/decktape:2.9
+
+  nginx:
+    image: nginx:1.15
+    restart: always
+
+  jupyter:
+    build:
+      context: .
