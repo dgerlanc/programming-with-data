@@ -3,7 +3,7 @@ channels:
   - defaults
 dependencies:
   - python=3.7.*
-  - numpy=1.15.*
-  - pandas=0.23.*
-  - jupyter=1.0.*
+  - numpy=1.16.*
+  - pandas=0.24.*
+  - jupyter
   - statsmodels=0.9.*
