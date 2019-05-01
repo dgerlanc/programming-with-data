@@ -51,3 +51,7 @@ This will create an `conda` environment called `pydata` which may be
 * Windows: `activate pydata`
 * Linux and Mac: `source activate pydata`
 
+## Feedback
+
+Your feedback on the course helps to improve it for future students.
+Please leave feedback [here](https://danielgerlanc.typeform.com/to/RyB6AJ).
