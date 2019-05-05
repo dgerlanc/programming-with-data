@@ -1,0 +1,8 @@
+name: pydata
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7.*
+  - numpy
+  - pandas=0.24.*
+
