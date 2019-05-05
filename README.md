@@ -1,6 +1,6 @@
 # Programming with Data: Python and Pandas
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dgerlanc/programming-with-data/binder)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dgerlanc/programming-with-data/master)
 
 Whether in R, MATLAB, Stata, or python, modern data analysis, for many
 researchers, requires some kind of programming. The preponderance of tools and
