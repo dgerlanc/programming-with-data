@@ -1,14 +1,19 @@
-version: '3'
+version: "3.7"
 
 services:
 
   slides:
     image: astefanutti/decktape:2.9
+    command: "http://nginx/04-merge-pivot-slides.slides.html slides-04.pdf"
+    volumes:
+      - "./build:/slides"
+    depends_on:
+      - nginx
 
   nginx:
     image: nginx:1.15
+    ports:
+      - "80:80"
     restart: always
-
-  jupyter:
-    build:
-      context: .
+    volumes:
+      - "./build:/usr/share/nginx/html:ro"
