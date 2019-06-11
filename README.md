@@ -7,12 +7,16 @@ of *Programming with Data: Python and Pandas*.
 
 ## Installation
 
-The easiest way to view the slides and try the exercises is to use the
-above Binder link.
+The easiest way to view the slides and try the exercises is to click the
+Binder badge above.
 
-If you're taking the course and may not have Internet access, download and
+You may view the slides and the answers directly in your browser on Github
+though you will not be able to run them interactively.
+
+If you're taking the course, want to follow along with the slides and do the
+exercises, and may not have Internet access, download and
 install the Anaconda Python 3 distribution and `conda` package manager
-ahead of time.
+ahead of time:
 
 ```
 https://www.anaconda.com/download/
@@ -27,7 +31,9 @@ Alternatively, you may clone the course repository using `git`:
 $ git clone https://github.com/dgerlanc/programming-with-data.git
 ```
 
-To complete the workshop exercises, you must use `conda` to install the
+The remainder of the installation requires that you use the command line.
+
+To complete the course exercises, you must use `conda` to install the
 dependencies specified in the `environment.yml` file in the repository:
 
 ```
@@ -40,6 +46,13 @@ This will create an `conda` environment called `pydata` which may be
 * Windows: `activate pydata`
 * Linux and Mac: `conda activate pydata` or `source activate pydata`
 
+Once you've activated the environment your prompt will probably
+look something like this:
+
+```
+(pydata) $
+```
+
 The entire course is designed to use `jupyter` notebooks. Start the
 notebook server to get started:
 
@@ -47,7 +60,7 @@ notebook server to get started:
 (pydata) $ jupyter notebook
 ```
 
-## Programming with Data: Foundations of Python and Pandas
+## Programming with Data<br>Foundations of Python and Pandas
 
 Whether in R, MATLAB, Stata, or python, modern data analysis, for many
 researchers, requires some kind of programming. The preponderance of tools and
