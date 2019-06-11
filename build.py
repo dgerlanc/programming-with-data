@@ -31,15 +31,25 @@ def slide2html(infile):
            ' --reveal-prefix=reveal.js'
            ' --SlidesExporter.file_extension=.html'
            ' --output-dir build').split()
-    cmd.append(infile)
+    cmd.append(str(infile))
     subprocess.run(cmd)
 
-    
+
+def run_slide(infile):
+    cmd = 'jupyter nbconvert --to notebook --inplace --execute'.split()
+    cmd.append(str(infile))
+
+    devnull = subprocess.DEVNULL
+    subprocess.run(cmd, check=True, stdout=devnull, stderr=devnull)
+
+
 def main():
     p = Path('.')
 
-    # TODO: execute slides and make sure no errors
-    
+    # TODO: add test for errors
+    slide_fns = p.glob('*slides.ipynb')
+    for slide_fn in sorted(slide_fns):
+        run_slide(slide_fn)
 
     logger.info('ipynb slides -> reveal.js html')
     slide_fns = p.glob('*slides.ipynb')
@@ -51,7 +61,9 @@ def main():
     for answer_nb in sorted(answers):
         exercise_nb = str(answer_nb).replace('answer', 'exercise')
         # print(f'{answer_nb} -> {exercise_nb}')
-        answer2exercise(answer_nb, exercise_nb)
+        answer2exercise(str(answer_nb), exercise_nb)
+
+    # copy over assets
 
     # html slides -> pdf
 
