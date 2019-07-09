@@ -49,14 +49,15 @@ def main():
     # TODO: add test for errors
     slide_fns = p.glob('*slides.ipynb')
     for slide_fn in sorted(slide_fns):
+        print(f'Running {slide_fn}')
         run_slide(slide_fn)
 
-    logger.info('ipynb slides -> reveal.js html')
+    print('ipynb slides -> reveal.js html')
     slide_fns = p.glob('*slides.ipynb')
     for slide_fn in sorted(slide_fns):
         slide2html(slide_fn)
     
-    logger.info('Convert exercises to answers')
+    print('Convert answers to exercises')
     answers = p.glob('*answers.ipynb')
     for answer_nb in sorted(answers):
         exercise_nb = str(answer_nb).replace('answer', 'exercise')
