@@ -4,11 +4,11 @@ channels:
   - conda-forge
 dependencies:
   - python=3.7.*
-  - numpy=1.17.*
   - pandas=0.25.*
-  - notebook=5.*
+  - numpy
+  - notebook
   - jupyter_contrib_nbextensions
   - rise
   - isort
   - jupyter
-  - statsmodels=0.10.*
+  - statsmodels
