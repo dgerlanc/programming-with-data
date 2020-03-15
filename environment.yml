@@ -4,7 +4,7 @@ channels:
   - conda-forge
 dependencies:
   - python=3.7.*
-  - pandas=0.25.*
+  - pandas=1.*
   - numpy
   - notebook
   - jupyter_contrib_nbextensions
