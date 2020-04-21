@@ -5,3 +5,4 @@ dependencies:
   - python=3.7.*
   - numpy
   - pandas=1.0.*
+  - matplotlib

@@ -12,3 +12,4 @@ dependencies:
   - isort
   - jupyter
   - statsmodels
+  - matplotlib
