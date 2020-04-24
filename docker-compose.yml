@@ -2,16 +2,17 @@ version: "3.7"
 
 services:
 
-  slides:
-    image: astefanutti/decktape:2.9
-    command: "http://nginx/04-merge-pivot-slides.slides.html slides-04.pdf"
-    volumes:
-      - "./build:/slides"
-    depends_on:
-      - nginx
+  # This works but currently only for a single slide
+  # slides:
+  #   image: astefanutti/decktape:2.11
+  #   command: "-s 2048x1280 http://nginx/03-group-apply-slides.html slides-03.pdf"
+  #   volumes:
+  #     - "./build:/slides"
+  #   depends_on:
+  #     - nginx
 
   nginx:
-    image: nginx:1.15
+    image: nginx:1.17
     ports:
       - "80:80"
     restart: always
