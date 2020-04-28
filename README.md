@@ -40,24 +40,24 @@ dependencies specified in the `environment.yml` file in the repository:
 $ conda env create -f environment.yml
 ```
 
-This will create an `conda` environment called `pydata` which may be
+This will create an `conda` environment called `progwd` which may be
 "activated" with the following commands:
 
-* Windows: `activate pydata`
-* Linux and Mac: `conda activate pydata` or `source activate pydata`
+* Windows: `activate progwd`
+* Linux and Mac: `conda activate progwd` or `source activate progwd`
 
 Once you've activated the environment your prompt will probably
 look something like this:
 
 ```
-(pydata) $
+(progwd) $
 ```
 
 The entire course is designed to use `jupyter` notebooks. Start the
 notebook server to get started:
 
 ```
-(pydata) $ jupyter notebook
+(progwd) $ jupyter notebook
 ```
 
 ## Programming with Data<br>Foundations of Python and Pandas
