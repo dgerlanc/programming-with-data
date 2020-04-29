@@ -5,12 +5,9 @@ channels:
 dependencies:
   - python=3.7.*
   - pandas=1.*
-  - pyarrow
   - numpy
   - notebook
   - jupyter_contrib_nbextensions
   - rise
   - isort
   - jupyter
-  - statsmodels
-  - matplotlib
