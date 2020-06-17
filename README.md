@@ -1,6 +1,6 @@
 # Programming with Data: Python and Pandas
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dgerlanc/programming-with-data/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dgerlanc/programming-with-data/master?urlpath=lab)
 
 This repository contains the slides, exercises, and answers for
 *Programming with Data: Python and Pandas*. The goal of this tutorial is to teach you, someone with experience programming in Python, most of the features available in Pandas. The material from this course has been presented at conferences including ODSC and Battlefin Discovery Data and online through the O'Reilly platform.
@@ -82,7 +82,7 @@ This will create an `conda` environment called `progwd` which may be
 "activated" with the following commands:
 
 * Windows: `activate progwd`
-* Linux and Mac: `conda activate progwd` or `source activate progwd`
+* Linux and Mac: `conda activate progwd`
 
 Once you've activated the environment your prompt will probably
 look something like this:
@@ -95,9 +95,8 @@ The entire course is designed to use `jupyter` notebooks. Start the
 notebook server to get started:
 
 ```
-(progwd) $ jupyter notebook
+(progwd) $ jupyter lab
 ```
-
 
 ## Feedback
 
