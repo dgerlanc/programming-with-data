@@ -1,7 +1,7 @@
-name: pydata
+name: progwd
 channels:
   - conda-forge
 dependencies:
-  - python=3.7.*
+  - python=3.8.*
   - pandas=1.0.*
   - numpy

@@ -1,13 +1,12 @@
-name: progwd
 channels:
-  - defaults
-  - conda-forge
+- conda-forge
 dependencies:
-  - python=3.7.*
-  - pandas=1.*
-  - numpy
-  - notebook
-  - jupyter_contrib_nbextensions
-  - rise
-  - isort
-  - jupyter
+- isort
+- jupyter_contrib_nbextensions
+- jupyterlab
+- notebook
+- numpy
+- pandas=1.0.*
+- python=3.8.*
+- rise
+name: progwd
