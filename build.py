@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 
-import logging
 import subprocess
+from functools import partial
+from multiprocessing import Pool
 from pathlib import Path
-
-logger = logging.getLogger(__name__)
 
 # TODO: Only update files changed since last run
 # TODO: Add conversion tool from existing answer notebooks
+# TODO: add test for errors when individual tasks fail
 
 
 def answer2exercise(infile, outfile):
     """
     Convert answer notebooks to exercise notebooks
-    
+
     TODO: Fail if output notebook is empty?
 
     """
@@ -49,23 +49,20 @@ def run_slide(infile):
 def main():
     p = Path(".")
 
-    # TODO: add test for errors
-    slide_fns = p.glob("*slides.ipynb")
-    for slide_fn in sorted(slide_fns):
-        print(f"Running {slide_fn}")
-        run_slide(slide_fn)
+    slide_fns = sorted(str(x) for x in p.glob("*slides.ipynb"))
+    answer_nbs = sorted(str(x) for x in p.glob("*answers.ipynb"))
+    exercise_nbs = [x.replace("answer", "exercise") for x in answer_nbs]
 
-    print("ipynb slides -> reveal.js html")
-    slide_fns = p.glob("*slides.ipynb")
-    for slide_fn in sorted(slide_fns):
-        slide2html(slide_fn)
+    with Pool(4) as pool:
+        print("Running notebooks")
+        pool.map(run_slide, slide_fns)
 
-    print("Convert answers to exercises")
-    answers = p.glob("*answers.ipynb")
-    for answer_nb in sorted(answers):
-        exercise_nb = str(answer_nb).replace("answer", "exercise")
+        print("ipynb slides -> reveal.js html")
+        pool.map(slide2html, slide_fns)
+
+        print("Convert answers to exercises")
         # print(f'{answer_nb} -> {exercise_nb}')
-        answer2exercise(str(answer_nb), exercise_nb)
+        pool.starmap(answer2exercise, zip(answer_nbs, exercise_nbs))
 
     # copy over assets
 
