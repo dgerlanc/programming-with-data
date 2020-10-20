@@ -3,6 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# OS X
+.DS_Store
+
+# intellij, vscode
+.idea/
+.vscode/
+
 # C extensions
 *.so
 
