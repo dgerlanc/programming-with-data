@@ -1,6 +1,6 @@
 # Programming with Data: Python and Pandas
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dgerlanc/programming-with-data/master?urlpath=lab)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dgerlanc/programming-with-data/main?urlpath=lab)
 
 This repository contains the slides, exercises, and answers for
 *Programming with Data: Python and Pandas*. The goal of this tutorial is to teach you, someone with experience programming in Python, most of the features available in Pandas. The material from this course has been presented at conferences including ODSC and Battlefin Discovery Data and online through the O'Reilly platform.
@@ -35,19 +35,19 @@ No statistics background is required.
 If you have a stable Internet connection and the free Binder service isn't under too much load, the easiest way to interactively run the slides and try the exercises is to click the
 Binder badge (make sure you open in a new window). Keep in mind that Binder aggresively shuts down idle instances so you'll need to refresh the link if you're idle for too long.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dgerlanc/programming-with-data/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dgerlanc/programming-with-data/main)
 
 ### Prerendered Notebooks
 
 You may view the HTML versions of slides and the answers directly in your browser on Github
 though you will not be able to run them interactively:
 
-* [Lesson 1 - Series](https://github.com/dgerlanc/programming-with-data/blob/master/01-intro-to-pandas-part-1-slides.ipynb)
-* [Lesson 2 - DataFrames](https://github.com/dgerlanc/programming-with-data/blob/master/02-intro-to-pandas-part-2-slides.ipynb)
-* [Lesson 3 - Split, Apply, Combine](https://github.com/dgerlanc/programming-with-data/blob/master/03-group-apply-slides.ipynb)
-* [Lesson 4 - Time Series](https://github.com/dgerlanc/programming-with-data/blob/master/04-time-series-slides.ipynb)
-* [Lesson 5 - Merge and Concat](https://github.com/dgerlanc/programming-with-data/blob/master/05-merge-pivot-slides.ipynb)
-* [Lesson 6 - Advanced Merge and Reshape](https://github.com/dgerlanc/programming-with-data/blob/master/06-advanced-merge-reshape-slides.ipynb)
+* [Lesson 1 - Series](https://github.com/dgerlanc/programming-with-data/blob/main/01-intro-to-pandas-part-1-slides.ipynb)
+* [Lesson 2 - DataFrames](https://github.com/dgerlanc/programming-with-data/blob/main/02-intro-to-pandas-part-2-slides.ipynb)
+* [Lesson 3 - Split, Apply, Combine](https://github.com/dgerlanc/programming-with-data/blob/main/03-group-apply-slides.ipynb)
+* [Lesson 4 - Time Series](https://github.com/dgerlanc/programming-with-data/blob/main/04-time-series-slides.ipynb)
+* [Lesson 5 - Merge and Concat](https://github.com/dgerlanc/programming-with-data/blob/main/05-merge-pivot-slides.ipynb)
+* [Lesson 6 - Advanced Merge and Reshape](https://github.com/dgerlanc/programming-with-data/blob/main/06-advanced-merge-reshape-slides.ipynb)
 
 ### Local Installation
 
@@ -61,7 +61,7 @@ https://www.anaconda.com/download/
 ```
 
 Download the latest version of the course materials
-[here](https://github.com/dgerlanc/programming-with-data/archive/master.zip).
+[here](https://github.com/dgerlanc/programming-with-data/archive/main.zip).
 
 Alternatively, you may clone the course repository using `git`:
 
