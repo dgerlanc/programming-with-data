@@ -6,7 +6,7 @@ dependencies:
 - jupyterlab
 - notebook
 - numpy
-- pandas=1.0.*
+- pandas=1.1.*
 - python=3.8.*
 - rise
 name: progwd
