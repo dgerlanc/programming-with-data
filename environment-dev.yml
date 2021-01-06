@@ -2,7 +2,5 @@ channels:
   - conda-forge
 dependencies:
   - isort
-  - jupyter_contrib_nbextensions
   - jupyterlab  
-  - notebook
   - rise

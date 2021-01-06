@@ -2,9 +2,7 @@ channels:
 - conda-forge
 dependencies:
 - isort
-- jupyter_contrib_nbextensions
 - jupyterlab
-- notebook
 - numpy
 - pandas=1.2.*
 - python=3.8.*
