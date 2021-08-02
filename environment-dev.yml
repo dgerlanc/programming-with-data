@@ -3,4 +3,3 @@ channels:
 dependencies:
   - isort
   - jupyterlab  
-  - rise
