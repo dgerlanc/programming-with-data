@@ -2,7 +2,7 @@
 
 import subprocess
 from functools import partial
-from multiprocessing import Pool
+from multiprocessing import cpu_count, Pool
 from pathlib import Path
 
 # TODO: Only update files changed since last run
@@ -53,7 +53,8 @@ def main():
     answer_nbs = sorted(str(x) for x in p.glob("*answers.ipynb"))
     exercise_nbs = [x.replace("answer", "exercise") for x in answer_nbs]
 
-    with Pool(4) as pool:
+    n_cpus = cpu_count()
+    with Pool(n_cpus) as pool:
         print("Running notebooks")
         pool.map(run_slide, slide_fns)
 
