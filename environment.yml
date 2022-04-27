@@ -3,6 +3,7 @@ channels:
 dependencies:
 - isort
 - jupyterlab
+- nbdime
 - numpy
 - pandas=1.4.3
 - python=3.10.5
