@@ -1,6 +1,7 @@
 channels:
 - conda-forge
 dependencies:
+- conda-merge
 - isort
 - jupyterlab
 - nbdime
